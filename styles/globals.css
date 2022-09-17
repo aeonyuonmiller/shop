@@ -1,18 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=League+Gothic&display=swap');
 html,
 body {
+  overscroll-behavior-y: none;
+  background: #ededed;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Inter', Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
+  color: rgb(0, 4, 218);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
+}
+
+h2{
+  margin-top: 0;
+  font-size: 2em;
+  font-family: 'League Gothic';
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #8d8d8d;
+}
+
+h5{
+  font-family: 'Inter';
+  font-size: 8px;
+  font-weight: 400;
+  color: hsla(0, 0%, 14%, 0.3);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.cookies{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 40px;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  left: calc(50% - 105px);
+  height: fit-content;
+  border-radius: 50px;
+  padding: .8em 1em .8em 2em;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0px -5px 10px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(16px);
+  opacity: 1;
+  transition: opacity ease .3s, transform ease 1s, background-color ease .2s;
+}
+
+.cookies:hover{
+  background-color: rgba(188, 188, 188, 0.3);
+}
+
+.cookies[data-isOn="true"] {
+  opacity: 0;
+  transform: translateY(-150%);
+}
+
+.cookies a{
+  font-size: inherit;
+  margin: 0 1px 0 3px;
+  color: hsl(210, 100%, 50%);
+  position: relative;
+  text-decoration: none;
+}
+
+.cookies a::before {
+  background: rgb(102, 179, 255);
+  content: "";
+  inset: 0;
+  height: 2px;
+  position: absolute;
+  top: 1.2em;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.15s ease-in;
+  z-index: -1;
+}
+
+.cookies a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.1s ease-out;
+}
+
+.cookies svg{
+  cursor: pointer;
+}
+
+nav{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 40px;
+  left: calc(50% - 130px);
+  height: fit-content;
+  border-radius: 50px;
+  padding: 1em 2em;
+  width: 260px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0px -5px 20px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+nav a {
+  color: hsl(0, 0%, 14%);
+  bottom:0;
+  transition: all ease .4s;
+}
+
+nav a:hover{
+  color: hsla(0, 0%, 14%, 0.5);
+}
+
+nav a:active{
+  color: hsla(0, 0%, 14%, 0.4);
+}
+
+.logo{
+  position: absolute;
+  font-family: 'League Gothic';
+  font-size: 2em;
+  letter-spacing: -0.01em;
+  bottom: 2.5rem;
+  right: 4rem;
+  cursor: pointer;
+}
+
+.info{
+  position: absolute;
+  bottom: 5em;
+  left: 8em;
+}
+
+.layout{
+  position: absolute;
+  right: 10%;
+  left: 10%;
+  background: rgb(232, 232, 232);
+  top: 4.5em;
+  padding: 2em;
+  border-radius: 30px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +164,22 @@ a {
   body {
     color: white;
     background: black;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .info{
+    bottom: .4em;
+    left: calc(50% - 70px);
+  }
+
+  .logo{
+    letter-spacing: -0.01em;
+    top: 2rem;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    cursor: pointer;
   }
 }

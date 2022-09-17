@@ -1,0 +1,205 @@
+{
+  "slices": {
+    "components": {
+      "editorial": {
+        "library": "slices",
+        "id": "editorial",
+        "name": "Editorial",
+        "description": "Editorial",
+        "model": {
+          "id": "editorial",
+          "type": "SharedSlice",
+          "name": "Editorial",
+          "description": "Editorial",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Editorial",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading1,heading2,heading3"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                },
+                "backgroundimage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "backgroundImage",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Nearer",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Minim reprehenderit magna est fugiat eiusmod proident pariatur occaecat. Velit ea et deserunt qui enim eu commodo est sint. Magna anim ipsum et nulla deserunt officia eu ipsum qui mollit esse eu dolore dolor.",
+                  "spans": []
+                }
+              ],
+              "backgroundimage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0"
+              }
+            },
+            "slice_type": "editorial"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/andymuller/Documents/code/shop/slices/Editorial/default/preview.png",
+            "width": 1300,
+            "height": 1300
+          }
+        }
+      },
+      "product": {
+        "library": "slices",
+        "id": "product",
+        "name": "Product",
+        "description": "Product",
+        "model": {
+          "id": "product",
+          "type": "SharedSlice",
+          "name": "Product",
+          "description": "Product",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Product",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                },
+                "img": {
+                  "type": "Image",
+                  "config": {
+                    "label": "img",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "price": {
+                  "type": "Number",
+                  "config": {
+                    "label": "price",
+                    "placeholder": "9.99"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Missing",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Occaecat laboris duis Lorem exercitation culpa duis non nostrud esse. Culpa eu pariatur amet ut reprehenderit fugiat magna dolor duis esse sint. Ut commodo qui id labore elit consequat sunt cillum minim nisi et cillum.",
+                  "spans": []
+                }
+              ],
+              "img": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f"
+              },
+              "price": 86
+            },
+            "slice_type": "product"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/andymuller/Documents/code/shop/.slicemachine/assets/slices/Product/default/preview.png",
+            "width": 800,
+            "height": 393
+          }
+        }
+      }
+    }
+  }
+}

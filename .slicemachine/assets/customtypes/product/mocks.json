@@ -1,0 +1,39 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "product",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04"
+    },
+    "artist": [
+      {
+        "type": "heading2",
+        "text": "Happily",
+        "spans": []
+      }
+    ],
+    "title": [
+      {
+        "type": "paragraph",
+        "text": "Ut ipsum commodo duis dolor qui consectetur magna cillum in nisi ullamco. Exercitation duis enim laborum duis cillum laboris ex ad.",
+        "spans": []
+      }
+    ],
+    "price": 87
+  }
+}
