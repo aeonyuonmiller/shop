@@ -199,7 +199,7 @@ nav a:active{
 
 .audioplayer .title{
   position: relative;
-  left: 1.6em;
+  left: 1.54em;
 }
 
 @media (prefers-color-scheme: dark) {
