@@ -17,11 +17,11 @@ const AudioPlayer = ({ title, url }) => {
         <audio src={url} preload="metadata" />
             <div className='absolute'><input type="range" tabIndex={2} /></div>
 
-                <AnimatePresence exitBeforeEnter={true}>
-            <motion.button onClick={togglePlayPause}>
+            <AnimatePresence exitBeforeEnter={true}>
+                <motion.button onClick={togglePlayPause}>
                     { isPlaying ? <Pause /> : <Play /> }
-            </motion.button>
-                </AnimatePresence>
+                </motion.button>
+            </AnimatePresence>
 
             <span className='title'><h5>{title}</h5></span>
         
