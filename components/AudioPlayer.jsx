@@ -12,19 +12,26 @@ const AudioPlayer = ({ title, url }) => {
         setIsPlaying(!isPlaying);
     }
 
+    // play/pause animation
+    const transition = {
+        intro: { opacity: 0, y: 100 },
+        show: { opacity: 1, y: 0, transition:{ ease: "easeOut", duration: 0.2 }},
+        exit: { opacity: 0, y: -100, transition:{ ease: "easeIn", duration: 0.5 }}
+      }
+
   return (
     <div className='audioplayer'>
         <audio src={url} preload="metadata" />
             <div className='absolute'><input type="range" tabIndex={2} /></div>
-
-            <AnimatePresence exitBeforeEnter={true}>
-                <motion.button onClick={togglePlayPause}>
-                    { isPlaying ? <Pause /> : <Play /> }
-                </motion.button>
-            </AnimatePresence>
-
-            <span className='title'><h5>{title}</h5></span>
-        
+                <button onClick={togglePlayPause}>
+                    <AnimatePresence>
+                    { isPlaying 
+                        ? <motion.div variants={transition} initial="intro" animate="show" exit="exit"><Pause/></motion.div> 
+                        : <motion.div variants={transition} initial="intro" animate="show" exit="exit"><Play/></motion.div> 
+                    }
+                    </AnimatePresence>
+                </button>
+            <span className='title'><h5>{title}</h5></span> 
     </div>
   )
 }
