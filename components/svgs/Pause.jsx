@@ -3,8 +3,8 @@ import { motion } from 'framer-motion'
 
 function Icon() {
   const transition = {
-    intro: { opacity: 0, y: 100 },
-    show: { opacity: 1, y: 0, transition:{ ease: "easeOut", duration: 0.2 }},
+    intro: { opacity: 0, scale: 0 },
+    show: { opacity: 1, scale: 1, transition:{ ease: "easeOut", duration: 0.2 }},
     exit: { opacity: 0, y: -100, transition:{ ease: "easeIn", duration: 0.5 }}
   }
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
 
 import Pause from './svgs/Pause'
@@ -17,11 +17,11 @@ const AudioPlayer = ({ title, url }) => {
         <audio src={url} preload="metadata" />
             <div className='absolute'><input type="range" tabIndex={2} /></div>
 
-            <AnimatePresence exitBeforeEnter={true}>
-            <button onClick={togglePlayPause}>
-                { isPlaying ? <Pause /> : <Play /> }
-            </button>
-            </AnimatePresence>
+                <AnimatePresence exitBeforeEnter={true}>
+            <motion.button onClick={togglePlayPause}>
+                    { isPlaying ? <Pause /> : <Play /> }
+            </motion.button>
+                </AnimatePresence>
 
             <span className='title'><h5>{title}</h5></span>
         
