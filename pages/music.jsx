@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import AudioPlayer from '../components/AudioPlayer';
 
 import Layout from '../components/Layout'
 import View from '../components/View';
@@ -15,9 +16,8 @@ const music = () => {
       </Head>
       <h2>Music</h2>
 
-      <ul>
-        <li>ALONER - sources</li>
-      </ul>
+      <AudioPlayer title="ALONER - sources" url="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" />
+      <AudioPlayer title="ALONER - else" url="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" />
     </Layout>
 
     <h5 className="info"><View>Four to the floor</View></h5>

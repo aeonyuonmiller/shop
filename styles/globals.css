@@ -79,7 +79,7 @@ h5{
 }
 
 .cookies a::before {
-  background: rgb(102, 179, 255);
+  background: #000;
   content: "";
   inset: 0;
   height: 2px;
@@ -149,12 +149,57 @@ nav a:active{
 
 .layout{
   position: absolute;
+  gap: 16px;
+  display: flex;
   right: 10%;
   left: 10%;
   background: rgb(232, 232, 232);
   top: 4.5em;
   padding: 2em;
   border-radius: 30px;
+}
+
+.audioplayer{
+  background: #bebebe;
+  color: #fff;
+  border-radius: 22px;
+  width: 100%;
+  max-width: 400px;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.audioplayer h5{
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.audioplayer button{
+  position: relative;
+  left: 1.4em;
+  background: none;
+  width: 50px;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+}
+.absolute{ position: absolute; height: 90px; background: none; }
+
+.audioplayer input[type=range]{
+  position: relative;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.audioplayer .title{
+  position: relative;
+  left: 1.6em;
 }
 
 @media (prefers-color-scheme: dark) {
