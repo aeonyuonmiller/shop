@@ -200,11 +200,8 @@ nav a:active{
   margin-right: 15px;
     height: 100%;
     width: 400px;
-    background: rgba(255, 255, 255, 0.6);
+    background: #bebebe;
     border-radius: 5px;
-    background-image: linear-gradient(#ff4500, #ff4500);
-    background-size: 70% 100%;
-    background-repeat: no-repeat;
 }
   
   /* Input Thumb */
@@ -212,10 +209,9 @@ nav a:active{
     -webkit-appearance: none;
     height: 20px;
     width: 20px;
-    border-radius: 50%;
-    background: #ff4500;
+    border-radius: 20px;
+    background: #676767;
     cursor: ew-resize;
-    box-shadow: 0 0 2px 0 #555;
     transition: background .3s ease-in-out;
   }
   
@@ -224,9 +220,8 @@ nav a:active{
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background: #ff4500;
+    background: #bebebe;
     cursor: ew-resize;
-    box-shadow: 0 0 2px 0 #555;
     transition: background .3s ease-in-out;
   }
   
@@ -277,7 +272,7 @@ nav a:active{
 
 .audioplayer .title{
   position: relative;
-  left: 1.54em;
+  left: 1.4em;
 }
 
 @media (prefers-color-scheme: dark) {

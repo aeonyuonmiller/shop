@@ -5,11 +5,11 @@ const Navi = () => {
   return (
     <>
     <nav>
-      <Link href="/music">Music</Link>
-      <Link href="/merch">Merch</Link>
-      <Link href="/social">Social</Link>
+      <Link tabIndex="1" href="/music">Music</Link>
+      <Link tabIndex="1" href="/merch">Merch</Link>
+      <Link tabIndex="1" href="/social">Social</Link>
     </nav>
-    <Link href="/"><span className="logo">FORCE</span></Link>
+    <Link href="/" tabIndex="1"><span className="logo">FORCE</span></Link>
     </>
   )
 }
