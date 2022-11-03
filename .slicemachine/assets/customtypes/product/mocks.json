@@ -11,29 +11,12 @@
   "lang": "en-us",
   "alternate_languages": [],
   "data": {
-    "image": {
-      "dimensions": {
-        "width": 900,
-        "height": 500
-      },
-      "alt": null,
-      "copyright": null,
-      "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04"
-    },
-    "artist": [
-      {
-        "type": "heading2",
-        "text": "Happily",
-        "spans": []
-      }
-    ],
     "title": [
       {
         "type": "paragraph",
-        "text": "Ut ipsum commodo duis dolor qui consectetur magna cillum in nisi ullamco. Exercitation duis enim laborum duis cillum laboris ex ad.",
+        "text": "Sit velit minim consectetur esse nisi officia mollit mollit nostrud commodo minim labore aute anim voluptate. Mollit excepteur dolore irure elit labore et aliquip proident quis ipsum ex. Esse dolore dolor fugiat in id non ex occaecat sunt aliquip commodo irure.",
         "spans": []
       }
-    ],
-    "price": 87
+    ]
   }
 }

@@ -1,12 +1,6 @@
 {
   "_cts": {
     "product": {
-      "artist": {
-        "config": {
-          "patternType": "HEADING",
-          "blocks": 1
-        }
-      },
       "title": {
         "config": {
           "patternType": "PARAGRAPH",

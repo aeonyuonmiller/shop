@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-
 import Pause from './svgs/Pause'
 import Play from './svgs/Play'
 
